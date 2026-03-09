@@ -8,9 +8,11 @@
 </head>
 <body>
 
-  <section id="login-section">
+
+  <section id="login-section" class="page-center">
     <div class="login-card">
-      <img src="github-logo.png" alt="GitHub Logo" class="logo">
+      <img src="github-logo.png" alt="GitHub Logo" class="logo" />
+
       <h1>GitHub Issues Tracker</h1>
       <p class="subtitle">Sign in to manage your issues</p>
 
@@ -30,11 +32,11 @@
     </div>
   </section>
 
- 
+
   <section id="app-section" class="hidden">
     <nav class="navbar">
       <div class="nav-left">
-       <img src="github-logo.png" alt="GitHub Logo">
+        <img src="github-logo.png" alt="GitHub Logo" />
         <span>GitHub Issues Tracker</span>
       </div>
 
@@ -89,98 +91,4 @@
 
   <script src="script.js"></script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GitHub Issues Tracker</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <section id="login-section">
-    <div class="login-card">
-      <img src="assets/github-logo.png" class="logo" alt="GitHub Logo" />
-
-      <h1>GitHub Issues Tracker</h1>
-      <p class="subtitle">Sign in to manage your issues</p>
-
-      <label for="username">Username</label>
-      <input id="username" type="text" placeholder="Enter Username" />
-
-      <label for="password">Password</label>
-      <input id="password" type="password" placeholder="Enter Password" />
-
-      <button id="login-btn">Sign In</button>
-
-      <div class="demo-box">
-        <p>Demo Credentials</p>
-        <p>Username: admin</p>
-        <p>Password: admin123</p>
-      </div>
-    </div>
-  </section>
-
- 
-  <section id="app-section" class="hidden">
-    <nav class="navbar">
-      <div class="nav-left">
-        <img src="assets/github-logo.png" alt="GitHub Logo" />
-        <span>GitHub Issues Tracker</span>
-      </div>
-
-      <div class="nav-right">
-        <input id="search-input" type="text" placeholder="Search issues..." />
-        <button id="search-btn">Search</button>
-      </div>
-    </nav>
-
-    <main class="main-content">
-      <div class="tabs">
-        <button class="tab active" data-status="all">All</button>
-        <button class="tab" data-status="open">Open</button>
-        <button class="tab" data-status="closed">Closed</button>
-      </div>
-
-      <div class="issue-summary">
-        <div>
-          <h2 id="issue-count">0 Issues</h2>
-          <p>Track and manage your project issues</p>
-        </div>
-
-        <div class="status-markers">
-          <span><span class="dot open-dot"></span> Open</span>
-          <span><span class="dot closed-dot"></span> Closed</span>
-        </div>
-      </div>
-
-      <div id="loader" class="loader hidden">Loading...</div>
-
-      <div id="issues-container" class="issues-grid"></div>
-    </main>
-  </section>
-
- 
-  <div id="issue-modal" class="modal hidden">
-    <div class="modal-content">
-      <h2 id="modal-title"></h2>
-      <p id="modal-description"></p>
-
-      <div class="modal-info">
-        <p><strong>Status:</strong> <span id="modal-status"></span></p>
-        <p><strong>Author:</strong> <span id="modal-author"></span></p>
-        <p><strong>Priority:</strong> <span id="modal-priority"></span></p>
-        <p><strong>Label:</strong> <span id="modal-label"></span></p>
-        <p><strong>Created At:</strong> <span id="modal-created"></span></p>
-      </div>
-
-      <button id="close-modal">Close</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
->>>>>>> 928a879e55cd77ee9bc20aa442b5c62b58d010bd
 </html>

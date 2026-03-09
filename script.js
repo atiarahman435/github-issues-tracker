@@ -64,7 +64,7 @@ function renderIssues(issues) {
     const card = document.createElement("div");
     card.classList.add("issue-card");
 
-    if (issue.status === "closed") {
+    if ((issue.status || "").toLowerCase() === "closed") {
       card.classList.add("closed");
     }
 
