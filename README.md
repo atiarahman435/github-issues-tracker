@@ -72,7 +72,6 @@ forEach() loops through an array but does not return a new array.
 
 ### 4. What is an arrow function
 Arrow functions are a shorter syntax for writing functions using the => symbol.
+5. What are template literals
 
-### 5. What are template literals
->>>>>>> 928a879e55cd77ee9bc20aa442b5c62b58d010bd
-Template literals allow inserting variables inside strings using backticks and ${}.
+Template literals allow inserting variables inside strings using backticks (`) and ${}.
