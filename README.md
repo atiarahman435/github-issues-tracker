@@ -1,77 +1,48 @@
-<<<<<<< HEAD
-# GitHub Issues Tracker
-
-This project is a simple issue tracker interface built using HTML, CSS, and JavaScript. 
-Users can log in with demo credentials and view issues fetched from an API.
-
-## Features
-- Login page
-- Issue list
-- Filter issues (All / Open / Closed)
-- Search issues
-- Modal with issue details
-- Responsive layout
-
-## Demo Credentials
-Username: admin  
-Password: admin123
-
-
 ## Questions
 
-### 1. Difference between var, let, and const
-var is function scoped and was used in older JavaScript.  
-let and const are block scoped.  
-let allows reassignment, while const cannot be reassigned after declaration.
+### 1. What is the difference between var, let, and const?
 
-### 2. What is the spread operator (...)
-The spread operator (...) is used to expand elements of an array or object into another array or object.
+`var`, `let`, and `const` are used to declare variables in JavaScript.
 
-### 3. Difference between map(), filter(), and forEach()
-map() creates a new array by transforming each element.  
-filter() creates a new array with elements that match a condition.  
-forEach() loops through an array but does not return a new array.
+- `var` is the older way of declaring variables and it is function-scoped.
+- `let` is block-scoped and can be reassigned later.
+- `const` is also block-scoped but its value cannot be reassigned after it is declared.
 
-### 4. What is an arrow function
-Arrow functions are a shorter syntax for writing functions using the => symbol.
+Because of better scoping and safer behavior, `let` and `const` are commonly used in modern JavaScript.
 
-### 5. What are template literals
-=======
-# GitHub Issues Tracker
+---
 
-This project is a simple issue tracker interface built using HTML, CSS, and JavaScript. 
-Users can log in with demo credentials and view issues fetched from an API.
+### 2. What is the spread operator (...)?
 
-## Features
-- Login page
-- Issue list
-- Filter issues (All / Open / Closed)
-- Search issues
-- Modal with issue details
-- Responsive layout
+The spread operator (`...`) is used to expand elements of an array or object.  
+It allows us to copy or merge arrays and objects easily.
 
-## Demo Credentials
-Username: admin  
-Password: admin123
+Example:
 
+```javascript
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4];
+3. Difference between map(), filter(), and forEach()
 
-## Questions
+These are array methods used to work with lists of data.
 
-### 1. Difference between var, let, and const
-var is function scoped and was used in older JavaScript.  
-let and const are block scoped.  
-let allows reassignment, while const cannot be reassigned after declaration.
+map() creates a new array by transforming each element.
 
-### 2. What is the spread operator (...)
-The spread operator (...) is used to expand elements of an array or object into another array or object.
+filter() creates a new array that contains only elements that match a condition.
 
-### 3. Difference between map(), filter(), and forEach()
-map() creates a new array by transforming each element.  
-filter() creates a new array with elements that match a condition.  
-forEach() loops through an array but does not return a new array.
+forEach() loops through an array and performs an action but does not return a new array.
+4. What is an arrow function?
 
-### 4. What is an arrow function
-Arrow functions are a shorter syntax for writing functions using the => symbol.
-5. What are template literals
+An arrow function is a shorter way to write functions in JavaScript using the => syntax.
 
-Template literals allow inserting variables inside strings using backticks (`) and ${}.
+Example:
+const add = (a, b) => a + b;
+5. What are template literals?
+
+Template literals are a way to write strings using backticks (`) instead of quotes.
+
+They allow variables to be inserted inside strings using ${}.
+
+Example:
+const name = "John";
+const message = `Hello ${name}`;
